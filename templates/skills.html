@@ -1,0 +1,70 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Skills
+{% endblock %}
+
+{% block main %}
+    <div class="container py-5">
+        <h1 class="text-center mb-5">My Skills</h1>
+
+        <div class="row g-4">
+            <!-- Python Skills Card -->
+            <div class="col-md-6 col-lg-6">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary"><i class="bi bi-code-slash me-2"></i>Python Skills</h5>
+                        <ul class="list-unstyled">
+                            <li><strong>Data Manipulation & Visualization:</strong> NumPy, Pandas, Matplotlib</li>
+                            <li><strong>Machine Learning:</strong> scikit-learn</li>
+                            <li><strong>Web Development:</strong> Flask</li>
+                            <li><strong>Data Science Tools:</strong> Jupyter Notebook, SciPy</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other Programming & Computational Skills Card -->
+            <div class="col-md-6 col-lg-6">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <h5 class="card-title text-success"><i class="bi bi-terminal me-2"></i>Other Programming & Computational Skills</h5>
+                        <ul class="list-unstyled">
+                            <li><strong>Linux & HPC:</strong> Command line tools for molecular docking, RNAseq analysis, and NCBI BLAST</li>
+                            <li><strong>R Programming:</strong> RNA-seq analysis, differential gene expression, and visualization</li>
+                            <li><strong>SQL:</strong> Database management, data querying, and analysis</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technical Skills Card -->
+            <div class="col-md-6 col-lg-6">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <h5 class="card-title text-danger"><i class="bi bi-tools me-2"></i>Technical Skills</h5>
+                        <ul class="list-unstyled">
+                            <li><strong>3D Printing:</strong> Prototyping with precision</li>
+                            <li><strong>AutoCAD:</strong> CAD design for engineering and research applications</li>
+                            <li><strong>Laser Cutting:</strong> High-accuracy manufacturing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Transferable Skills Card -->
+            <div class="col-md-6 col-lg-6">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <h5 class="card-title text-info"><i class="bi bi-graph-up-arrow me-2"></i>Transferable Skills</h5>
+                        <ul class="list-unstyled">
+                            <li><strong>Problem-Solving:</strong> Tackling complex biological and computational challenges</li>
+                            <li><strong>Data Analysis:</strong> Interpreting large datasets to uncover meaningful insights</li>
+                            <li><strong>Interdisciplinary Collaboration:</strong> Bridging microbiology and programming to advance research</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

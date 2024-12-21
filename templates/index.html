@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+    <div class="container mt-5 d-flex flex-column flex-md-row align-items-center justify-content-center">
+
+        <div class="ms-md-2 mt-4 mt-md-0">
+            <!-- Profile Picture -->
+            <img src="{{ url_for('static', filename='profile.jpg') }}" alt="Profile Picture" class="rounded-circle img-thumbnail mb-3" width="200" height="200">
+        </div>
+        
+        <div class="text-center text-md-start mb-4 mb-md-0 ms-md-5">
+            <h1>Microbiologist & Programmer</h1>
+            <!-- Tagline -->
+            <p class="lead text-muted mt-3">Self-taught Python programmer leveraging code to solve complex problems in scientific research and beyond.</p>
+            
+            <p class="d-flex flex-wrap gap-3 justify-content-center mb-3">
+                <!-- Download CV Button -->
+                <a href="{{ url_for('static', filename='Butzin_cv.pdf') }}" class="btn btn-success btn-lg d-inline-block me-2" role="button" download="Butzin_cv.pdf">
+                    <i class="bi bi-file-earmark-arrow-down"></i> Download CV
+                </a>
+
+                <!-- GitHub Link Button -->
+                <a href="https://github.com/xybutzin" class="btn btn-dark btn-lg d-inline-block me-2" role="button" target="_blank">
+                    <i class="bi bi-github"></i> My GitHub
+                </a>
+
+                <!-- LinkedIn Link Button -->
+                <a href="https://https://www.linkedin.com/in/xuan-yi-29387ba4/" class="btn btn-primary btn-lg d-inline-block me-2" role="button" target="_blank">
+                    <i class="bi bi-linkedin"></i> My LinkedIn
+                </a>
+
+                <!-- Contact Me Button -->
+                <a href="{{ url_for('contact') }}" class="btn btn-warning btn-lg d-inline-block me-2" role="button">
+                    <i class="bi bi-envelope"></i> Contact Me
+                </a>
+            </p>
+        </div>
+
+        
+    </div>
+{% endblock %}

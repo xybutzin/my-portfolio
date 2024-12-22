@@ -4,7 +4,6 @@ from flask import Flask, redirect, render_template, url_for, flash, request, abo
 from flask_mail import Mail, Message
 from dotenv import load_dotenv
 from forms import ContactForm
-import requests
 
 
 load_dotenv() # Load environment variables from .env file
